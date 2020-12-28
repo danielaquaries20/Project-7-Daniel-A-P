@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/value17sdp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageKodepedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value10sdp"
+        android:layout_marginTop="@dimen/value20sdp"
+        android:layout_marginRight="@dimen/value10sdp"
+        android:contentDescription="@string/kodepedia"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/img_splashscreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value40sdp"
+        android:layout_marginTop="@dimen/value20sdp"
+        android:autofillHints="@string/username"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_baseline_person_24_black"
+        android:drawablePadding="@dimen/value20sdp"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:paddingStart="@dimen/value16sdp"
+        android:paddingEnd="@dimen/value16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageKodepedia"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value40sdp"
+        android:layout_marginTop="@dimen/value17sdp"
+        android:autofillHints="@string/email"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_baseline_email_24_black"
+        android:drawablePadding="@dimen/value20sdp"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:paddingStart="@dimen/value16sdp"
+        android:paddingEnd="@dimen/value16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
+        tools:ignore="TextFields" />
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value40sdp"
+        android:layout_marginTop="@dimen/value17sdp"
+        android:autofillHints="@string/password"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_baseline_lock_24_black"
+        android:drawablePadding="@dimen/value20sdp"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:paddingStart="@dimen/value16sdp"
+        android:paddingEnd="@dimen/value16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/textForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value5sdp"
+        android:padding="@dimen/value3sdp"
+        android:text="@string/forgot_password"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value30sdp"
+        android:background="@drawable/button_background_one"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/value20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textForgotPassword" />
+
+    <TextView
+        android:id="@+id/textNotRegistered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value10sdp"
+        android:padding="@dimen/value3sdp"
+        android:text="@string/not_registered_yet"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value10sdp"
+        android:background="@drawable/button_background_two"
+        android:text="@string/register"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/value20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNotRegistered" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value30sdp"
+        android:padding="@dimen/value3sdp"
+        android:text="@string/daniel_aquaries_pratama"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

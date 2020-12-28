@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Project 7 - Daniel A P</string>
+    <string name="login">Login</string>
+    <string name="login_kapital">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="not_registered_yet">Not Registered Yet?</string>
+    <string name="register">Register</string>
+    <string name="selamat_masuk_aplikasi">Selamat Masuk Aplikasi</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="back">Back</string>
+    <string name="daniel_aquaries_pratama">Daniel Aquaries Pratama</string>
+    <string name="kodepedia">Kodepedia</string>
+</resources>
